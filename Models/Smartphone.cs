@@ -10,7 +10,11 @@ namespace DesafioPOO.Models
             Numero = numero;
             // TODO: Passar os parâmetros do construtor para as propriedades
         }
+        private string Modelo { get; set; }
 
+        private int IMEI { get; set; }
+
+        private int Memoria { get; set; }
         public void Ligar()
         {
             Console.WriteLine("Ligando...");
@@ -22,5 +26,6 @@ namespace DesafioPOO.Models
         }
 
         public abstract void InstalarAplicativo(string nomeApp);
+
     }
 }
